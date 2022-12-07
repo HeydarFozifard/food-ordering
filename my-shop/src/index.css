@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "iranYkean";
+    src: url("./font/iranyekanwebregularfanum.woff") format("woff");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "iranYkean";
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #AEBDCA;
+}
+
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      height: 40px;
+    background: #7895B2;
+    border-radius: 10px
+  }

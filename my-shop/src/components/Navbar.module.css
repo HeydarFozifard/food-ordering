@@ -1,0 +1,167 @@
+.Container_Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/slider-image2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+.title {
+    color: #fff;
+}
+.list {
+    display: flex;
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.list li a {
+    margin: 0 20px;
+    color: #fff;
+    position: relative;
+}
+.circle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.ShoppingIcon {
+    font-size: 25px;
+    color: rgb(221, 226, 224);
+    position: relative;
+}
+
+.ShoppingIcon:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+.ShoppingIcon::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.conterBasket {
+    position: absolute;
+    top: -18px;
+    left: 18px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: darkcyan;
+    text-align: center;
+    z-index: 30;
+}
+/* start code for responsive menu */
+
+.btn_hamberger {
+    display: none;
+    position: relative;
+    z-index: 22;
+}
+
+.hamberger_Menu {
+    display: none;
+    position: relative;
+    z-index: 13;
+    color: aquamarine;
+}
+
+
+/* the end code for responsive menu */
+
+/* media query for responsive the menu  */
+@media only screen and (max-width: 900px) {
+    .list li a {
+        margin: 0 10px;
+    }
+    .list {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .list {
+        display: none;
+        margin-right: 0;
+    }
+
+    .menu_responsive {
+        position: relative;
+        top: -10px;
+        left: 110px;
+    }
+    .hamberger_Menu {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.5;
+        width: 200px;
+        height: 35vh;
+        padding: 15px 15px;
+        z-index: 35;
+        border-radius: 12px;
+        background-color: rgba(95, 142, 204, 0.418);
+    }
+    .basketIcon {
+        position: relative;
+        right: 100px;
+        top: 50px;
+        font-size: 100px;
+        width: 40px;
+        color: #fff;
+    }
+    .conterBasket {
+        position: absolute;
+        top: 0px;
+        left: 105px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: darkcyan;
+        text-align: center;
+        z-index: 30;
+    }
+
+    .Container_Nav {
+        padding: 30px;
+    }
+    /* //responsive menu  */
+    .btn_hamberger:checked ~ .hamberger_Menu {
+        display: block;
+    }
+    .btn_hamberger {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Container_Nav {
+        padding: 20px;
+    }
+}

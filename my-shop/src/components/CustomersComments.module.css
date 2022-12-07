@@ -1,0 +1,54 @@
+.Slider {
+    padding: 40px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+  
+  background-color: #D6E4E5;
+}
+
+.img > div {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.Comments_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.icon {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url("../images//favicon.ico");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    margin: 0 20px;
+}
+
+@media only screen and (max-width:1000px) {
+  .Slider{
+    width: 85%;
+  }
+   
+
+}
+
+@media only screen and (max-width:600px) {
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .headerTitle  {
+        font-size: 20px;
+    }
+    .Slider{
+        width: 90%;
+      }
+   
+
+}

@@ -1,0 +1,75 @@
+
+
+.continaerFoodCart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    border-radius: 12px;
+    backdrop-filter: blur(20.6px);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%), 0 10px 15px rgb(0 0 0 / 20%);
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.25), rgba(255,255,255,0.25));
+    mix-blend-mode: hard-light;
+    padding: 10px ;
+    color: #fff;
+}
+
+.img_basketShop img{
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+}
+
+.infoFood h2{
+    line-height: 4;
+}
+.infoFood h3{
+    letter-spacing: 3px;
+}
+.boxBtn{
+    margin-right:50px;
+}
+.boxBtn span{
+    margin: 0 5px;
+    background-color: rgb(130, 219, 219);
+    padding: 3px 5px;
+    display: inline-block;
+    border-radius: 10%;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .img_basketShop img{
+        width: 150px;
+        height: 150px;
+    }
+    .infoFood h2,h3{
+        line-height: 2;
+        font-size: 18px;
+    }
+    .infoFood h3{
+        letter-spacing: 2px;
+
+    }
+    div .boxBtn{
+        margin-right:20px;
+    }
+    
+   
+}
+
+@media only screen and (max-width: 500px) {
+    .img_basketShop img{
+        width: 150px;
+        height: 150px;
+    }
+    .infoFood h2,h3{
+        line-height: 2;
+        font-size: 15px;
+    }
+    .boxBtn{
+        margin-right:20px;
+    }
+   
+}

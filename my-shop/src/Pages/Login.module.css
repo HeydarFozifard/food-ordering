@@ -1,0 +1,40 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+input{
+    display: block;
+    margin: 12px 0px;
+    width: 300px;
+    height: 30px;
+}
+label{
+    margin: 12px 0px;
+
+
+}
+button{
+    width: 60px;
+    height: 30px;
+}
+h6{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(189, 60, 60);
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.containerBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+::placeholder{
+    color: rgb(202, 48, 48);
+}

@@ -1,0 +1,117 @@
+ /* style for title of contact us  */
+
+.AboutUs_title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.icon {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url("../images//favicon.ico");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    margin: 0 20px;
+}
+ /* style for title of contact us  */
+
+
+.contianer_address {
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.container_mainList{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container_mainList li {
+    margin: 10px 20px;
+    width: 250px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EFF5F5;
+  border-radius: 10px;
+  line-height: 1.5;
+  text-align: center;
+  
+} 
+
+.contianer_address ul li div {
+    margin-left: 10px;
+}
+
+.socialMediaIcon {
+    position: relative;
+    top: 10px;
+}
+ .socialMediaIcon ol {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 15px;
+}
+.socialMediaIcon ol a i:hover{
+   font-size: 20px;
+   transform: scale(2);
+   transition:all ease .5s;
+}
+.socialMediaIcon li a:hover {
+    width: 24px;
+    border-radius: 50%;
+    background-color: rgb(190, 128, 128);
+    position: relative;
+}
+
+
+.contianer_address ul li span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(126, 221, 62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: aliceblue;
+}
+
+/* the code for responsive  */
+
+
+@media only screen and (max-width:900px) {
+
+    .container_mainList li{
+        margin: 10px 0px;
+        width: 70%;
+    }
+
+}
+@media only screen and (max-width:500px) {
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .headerTitle  {
+        font-size: 20px;
+    }
+    .container_mainList li{
+        width: 90%;
+    }
+
+
+}

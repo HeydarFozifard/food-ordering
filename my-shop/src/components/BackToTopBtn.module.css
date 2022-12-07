@@ -1,0 +1,10 @@
+.BackToTopBtn{
+    font-size: 30px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.BackToTopBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition:all ease .5s;
+}

@@ -1,0 +1,109 @@
+.Container_chefs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+.Container_chefs_box {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+.Container_chefs_box div {
+    width: 300px;
+    margin: 0 30px;
+}
+.contianer_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url("../images/favicon.ico");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    margin: 0 20px;
+}
+
+/* style for tooltip */
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 30%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: visibility 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+    .Container_chefs_box div {
+        width: 300px;
+        margin: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .Container_chefs_box{
+    justify-content: center;
+    text-align: center;
+  }
+    .Container_chefs_box div {
+        width: 500px;
+        margin: 30px 0px;
+    }
+
+    .tooltip .tooltiptext {
+      
+      bottom: 100%;
+      left: 30%;
+  }
+  
+}
+@media only screen and (max-width:600px) {
+  .icon{
+      width: 40px;
+      height: 40px;
+  }
+  .chefTitle  {
+      font-size: 20px;
+  }
+ 
+ 
+
+}

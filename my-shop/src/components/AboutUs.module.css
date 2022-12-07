@@ -1,0 +1,42 @@
+.Aboutus {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.about_us_des {
+    width: 55%;
+    direction: rtl;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 3px 30px #eee;
+    padding: 30px 10px;
+    border-radius: 12px;
+}
+.about_us_des:hover{
+    box-shadow: 2px 3px 60px rgb(238, 212, 212);
+
+}
+
+.about_us_img {
+    width: 45%;
+}
+.about_us_img img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .Aboutus {
+      
+        justify-content: center;
+    }
+    .about_us_des{
+        width: 100%;
+        font-size: 14px;
+    }
+    .about_us_img {
+        width: 100%;
+    }
+  }
